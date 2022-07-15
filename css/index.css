@@ -1,0 +1,268 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+
+.menu_list {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  text-align: center;
+  margin: 0 0 5% 0;
+  background-color: #fff0f0;
+}
+
+.menu_list li {
+  display: inline-block;
+  margin: 3% 7% 0 7%;
+  font-size: 1.5rem;
+}
+
+.menu_list a {
+  color: black;
+}
+
+.top_ment_wrap {
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+
+.top_ment_wrap .top_img {
+  float: left;
+  background-image: url(../img/top_img.png);
+  background-size: cover;
+  width: 30%;
+  height: 700px;
+  margin: 0 0 0 10%;
+  z-index: 2;
+}
+
+.top_ment_wrap .top_ment {
+  margin-top: 15%;
+}
+
+.top_ment_wrap .top_ment p {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.top_ment_wrap .top_ment .ment:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.top_ment_wrap .top_ment .ment:nth-child(2) {
+  font-size: 2.5rem;
+}
+
+.top_ment_wrap .top_ment .ment:nth-child(3) {
+  font-size: 1.5rem;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 1800px;
+  background-color: antiquewhite;
+}
+
+.introduction_1 {
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+
+.introduction_1 .title {
+  width: 100%;
+  height: 130px;
+  display: block;
+}
+
+.introduction_1 .title h1 {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 1.8rem;
+}
+
+.introduction_1 .introduction_contents1 {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introduction_1 .introduction_contents1 .education {
+  position: relative;
+  width: 45%;
+  height: 250px;
+  border-radius: 30px;
+  margin: 0 1% 2% 2%;
+}
+
+.introduction_1 .introduction_contents1 .education h2 {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.introduction_1 .introduction_contents1 .education .education_contents {
+  position: relative;
+  border: solid black 1px;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.introduction_1 .introduction_contents1 .education .education_contents ul {
+  margin: 2% 0 0 25%;
+}
+
+.introduction_1 .introduction_contents1 .education .education_contents ul li {
+  width: 90%;
+  height: 10%;
+  padding: 6% 0 0 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.introduction_1 .introduction_contents1 .hobby {
+  width: 45%;
+  height: 250px;
+  margin: 0 2% 2% 1%;
+}
+
+.introduction_1 .introduction_contents1 .hobby h2 {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.introduction_1 .introduction_contents1 .hobby .hobby_contents {
+  position: relative;
+  border: solid black 1px;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.introduction_1 .introduction_contents1 .hobby .hobby_contents ul {
+  margin: 3% 0 0 40%;
+}
+
+.introduction_1 .introduction_contents1 .hobby .hobby_contents ul li {
+  width: 90%;
+  height: 10%;
+  padding: 10% 0 0 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.introduction_1 .introduction_contents2 {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction_1 .introduction_contents2 .activity {
+  width: 92%;
+  height: 400px;
+}
+
+.introduction_1 .introduction_contents2 .activity h2 {
+  margin-top: 2%;
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.introduction_1 .introduction_contents2 .activity .activity_contents {
+  position: relative;
+  border: solid black 1px;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.introduction_1 .introduction_contents2 .activity .activity_contents ul {
+  margin: 2% 0 0 30%;
+}
+
+.introduction_1 .introduction_contents2 .activity .activity_contents ul li {
+  width: 90%;
+  height: 10%;
+  padding: 4% 0 0 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.introduction_1 .introduction_contents2 .activity .activity_contents ul li span {
+  margin-right: 5%;
+}
+/*# sourceMappingURL=index.css.map */
