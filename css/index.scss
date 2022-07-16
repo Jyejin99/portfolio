@@ -23,6 +23,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
 }
@@ -47,90 +50,122 @@ a{
 
 body{
     overflow-x: hidden;
+    height: 100%;
 }
+
+
 header{
+    width: 100%;   
+    height: 100%;
+    min-width: 1200px;
+}
+.top_wrap{
     position: relative;
     width: 100%;
     height: 900px;
-}
-.menu_list{
-    position: relative;
-    width: 100%;
-    height: 130px;
-    text-align: center;
-    margin: 0 0 5% 0;
-    background-color: rgb(255, 240, 240);
-    li{
-        display: inline-block;
-        margin: 3% 7% 0 7%;
-        font-size: 1.5rem;
-    }
-    a{
-        color: black;
-    }
-}
-.top_ment_wrap{
-    float: right;
-    width: 100%;
-    height: 100%;
-    .top_img{
-        float: left;
-        background-image: url(../img/top_img.png);
-        background-size: cover;
-        width: 30%;
-        height: 700px;
-        margin: 0 0 0 10%;
-        z-index: 2;
-    }    
-    .top_ment{
-        margin-top: 15%;
-        p{
-            text-align: center;
-            margin-bottom: 2%;
-        }
-        .ment:nth-child(1){
-            font-size: 1.5rem;
-        }
-        .ment:nth-child(2){
+    margin: 0 auto;
+    .menu_list{
+        height: 130px;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px 0;
+        background-color: #4b6584;
+        li{
+            display: inline-block;
+            margin: 40px 100px 0 100px;
             font-size: 2.5rem;
         }
-        .ment:nth-child(3){
-            font-size: 1.5rem;
+        a{
+            color: white;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+    .top_ment_wrap{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        .top_img{
+            margin: 100px 5% 0 0;
+            width: 600px;
+            height: 100%;
+            img{
+                width: 80%;
+            }
+        }
+        .top_ment{
+            width: 500px;
+            height: 300px;
+            margin: 250px 5% 0 0;
+            p{
+                text-align: center;
+                margin-bottom: 2%;
+            }
+            .ment:nth-child(1){
+                font-size: 2rem;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 500;
+                color: #36485e;
+            }
+            .ment:nth-child(2){
+                font-size: 5rem;
+                font-family: 'Nunito', sans-serif;
+                color: #36485e;
+            }
+            .ment:nth-child(3){
+                margin-top: 10%;
+                font-size: 3rem;
+                font-family: 'Nunito', sans-serif;
+                color: #4b6584;
+            }
         }
     }
 }
 
-main{
-    position: relative;
+@mixin title {
     width: 100%;
-    height: 1800px;
-    background-color: antiquewhite;
+    height: 130px;
+    display: block;
+    h1{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 2.5rem;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+}
+ul li, p, span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 .introduction_1{
     position: relative;
     width: 100%;
     height: 900px;
+    background-color: #d1d8e0;
     .title{
-        width: 100%;
-        height: 130px;
-        display: block;
-        h1{
-            text-align: center;
-            padding-top: 3%;
-            font-size: 1.8rem;
-        }
+        @include title;
     }
     .introduction_contents1{
-        position: relative;
+        font-family: 'Nanum Gothic', sans-serif;
         width: 100%;
         display: flex;
         justify-content: center;
         .education{
-            position: relative;
-            width: 45%;
+            width: 600px;
             height: 250px;
             border-radius: 30px;
-            margin: 0 1% 2% 2%;
+            margin: 0 20px 5px 5px;
             h2{
                 height: 20%;
                 width: 100%;
@@ -138,16 +173,15 @@ main{
                 font-size: 1.5rem;
             }
             .education_contents{
-                position: relative;
-                border: solid black 1px;
                 border-radius: 20px;
                 height: 80%;
+                background-color: rgb(255, 255, 255);
                 ul{
                     margin: 2% 0 0 25%;
                     li{
                         width: 90%;
                         height: 10%;
-                        padding: 6% 0 0 0;
+                        padding: 35px 0 0 0;
                         text-align: left;
                         font-size: 1.2rem;
                     }
@@ -155,9 +189,10 @@ main{
             }
         }
         .hobby{
-            width: 45%;
+            width: 600px;
             height: 250px;
-            margin: 0 2% 2% 1%;
+            border-radius: 30px;
+            margin: 0 5px 5px 20px;
             h2{
                 height: 20%;
                 width: 100%;
@@ -165,18 +200,17 @@ main{
                 font-size: 1.5rem;
             }
             .hobby_contents{
-                position: relative;
-                border: solid black 1px;
                 border-radius: 20px;
                 height: 80%;
+                background-color: rgb(255, 255, 255);
                 ul{
                     margin: 3% 0 0 40%; 
                     li{
                         width: 90%;
                         height: 10%;
-                        padding: 10% 0 0 0;
+                        padding: 50px 0 0 0;
                         text-align: left;
-                        font-size: 1.2rem;
+                        font-size: 1.2rem;     
                     }
                 }
             }
@@ -187,26 +221,25 @@ main{
         justify-content: center;
         display: flex;
         .activity{
-            width: 92%;
+            width: 1250px;
             height: 400px;
             h2{
-                margin-top: 2%;
+                margin-top: 50px;
                 height: 15%;
                 width: 100%;
                 text-align: center;
                 font-size: 1.5rem;
             }
             .activity_contents{
-                position: relative;
-                border: solid black 1px;
                 border-radius: 20px;
                 height: 80%;
+                background-color: rgb(255, 255, 255);
                 ul{
-                    margin: 2% 0 0 30%;
+                    margin: 1% 0 0 20%;
                     li{
                         width: 90%;
                         height: 10%;
-                        padding: 4% 0 0 0;
+                        padding: 45px 0 0 0;
                         text-align: left;
                         font-size: 1.2rem;
                         span{
@@ -216,5 +249,192 @@ main{
                 }
             }
         }
+    }
+}
+@mixin skill_contents{
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+    .skill_img{
+        max-width: 80%;
+        margin: 5% 0 5% 10%;
+        background-color: antiquewhite;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+.introduction_2{
+    width: 100%;
+    height: 900px;
+    background-color: #a5b1c2;
+    .introduction_list_1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .skill_1{
+            margin: 2% 1% 0 2%;
+            width: 400px;
+            @include skill_contents;
+        }
+        .skill_2{
+            margin: 2% 1% 0 2%;
+            width: 400px;
+            @include skill_contents;
+        }
+        .skill_3{
+            margin: 2% 1% 0 2%;
+            width: 400px;
+            @include skill_contents;
+        }
+    }
+}
+
+.swiper {
+  width: 100%;
+  height: 900px;
+  min-width: 1200px;
+  background-color: #7e91a9;
+  .title2{
+    @include title;
+    }
+}
+.swiper-slide {
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+    .project_1, .project_2{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 1400px;
+        height: 80%;
+        object-fit: cover;
+        background-color: white;
+        h2{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 5%;
+        }
+        .img-box{
+            float: left;
+            position: relative;
+            width: 40%;
+            height: 400px;
+            margin: 5% 0 0 7%;
+            background-attachment: scroll;
+            background-size: cover;
+            overflow-x: hidden;
+            img{
+                position: absolute;
+                width: 100%;
+            }
+        }
+        .project-ment{
+            float: right;
+            width: 40%;
+            height: 400px;
+            margin: 5% 7% 0 0;
+            background-color: #d1d8e0;
+            span{
+                display: block;
+                margin: 5% 0 5% 5%;
+            }
+        }
+    }
+}
+
+.swiper-button-next{
+    margin-right: 50px;
+}
+.swiper-button-prev{
+    margin-left: 50px;
+}
+.swiper-pagination{
+    margin-bottom: 50px;
+    span{
+        width: 10%;
+        border-radius: 0%;
+    }
+    
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    background-color: #4b6584;
+}
+.footer_wrap{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    .title3{
+        @include title;
+        color: white;
+    }
+    .address{
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+        li{
+            margin-top: 3%;
+            img{
+                width: 70px;
+                vertical-align: middle;
+                margin-right: 2%;
+                filter: brightness(0) invert(1);            
+            }
+            span{
+                font-size: 2rem;
+                font-family: 'Nunito', sans-serif;
+                color: white;
+            }
+            button{
+                background-color: rgba( 255, 255, 255, 0 );
+                border: none;
+                cursor: pointer;
+                img{
+                    width: 30px;
+                    margin: 0 0 10px 10px;
+                    opacity: 70%;
+                }
+            }
+            .Myadress:hover{
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-color: white;
+                text-decoration-thickness: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+    .last_ment{
+        display: block;
+        font-size: 4rem;
+        margin-top: 200px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        text-align: center;
+    }
+    .top_button{
+        position: absolute;
+        font-size: 2rem;
+        border-radius: 100%;
+        border: none;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Nunito', sans-serif; 
+        bottom: 1.5em;
+        left: 1.5em;
+    }
+    .top_button:hover{
+        cursor: pointer;
     }
 }
