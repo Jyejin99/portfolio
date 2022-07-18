@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
 	line-height: 1;
@@ -473,17 +474,16 @@ a{
     .top_wrap{
         position: relative;
         width: 100%;
-        height: 900px;
-        margin: 0 auto;
+        height: 100%;
         .menu_list{
-            height: 130px;
+            height: 30%;
             width: 100%;
             text-align: center;
             background-color: #4b6584;
             li{
                 display: inline-block;
-                margin: 5% 4% 0 4%;
-                font-size: 2rem;
+                margin: 5%;
+                font-size: 1.5rem;
             }
             a{
                 color: white;
@@ -503,27 +503,27 @@ a{
                 display: none;
             }
             .top_ment{
-                width: 500px;
-                height: 300px;
+                width: 100%;
+                height: 100%;
                 margin: 30% auto;
                 p{
                     text-align: center;
                     margin-bottom: 2%;
                 }
                 .ment:nth-child(1){
-                    font-size: 2rem;
+                    font-size: 1rem;
                     font-family: 'Noto Sans KR', sans-serif;
                     font-weight: 500;
                     color: #36485e;
                 }
                 .ment:nth-child(2){
-                    font-size: 5rem;
+                    font-size: 3rem;
                     font-family: 'Nunito', sans-serif;
                     color: #36485e;
                 }
                 .ment:nth-child(3){
                     margin-top: 10%;
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-family: 'Nunito', sans-serif;
                     color: #4b6584;
                 }
@@ -584,13 +584,13 @@ a{
                     height: 80%;
                     background-color: rgb(255, 255, 255);
                     ul{
-                        margin: 2% 0 0 10%;
+                        margin: 2% 0 0 5%;
                         li{
                             width: 90%;
                             height: 10%;
-                            padding: 35px 0 0 0;
+                            padding-top: 10%;
                             text-align: left;
-                            font-size: 1rem;
+                            font-size: 0.8rem;
                         }
                     }
                 }
@@ -611,13 +611,13 @@ a{
                     height: 80%;
                     background-color: rgb(255, 255, 255);
                     ul{
-                        margin: 2% 0 0 35%;
+                        margin: 2% 0 0 5%;
                         li{
                             width: 90%;
                             height: 10%;
-                            padding: 50px 0 0 0;
+                            padding-top: 10%;
                             text-align: left;
-                            font-size: 1rem;     
+                            font-size: 0.8rem;
                         }
                     }
                 }
@@ -642,13 +642,13 @@ a{
                     height: 80%;
                     background-color: rgb(255, 255, 255);
                     ul{
-                        margin: 1% 0 0 10%;
+                        margin: 2% 0 5% 5%;
                         li{
                             width: 90%;
                             height: 10%;
-                            padding: 45px 0 0 0;
+                            padding-top: 10%;
                             text-align: left;
-                            font-size: 1rem;
+                            font-size: 0.8rem;
                             span{
                                 margin-right: 5%;
                             }
@@ -663,7 +663,7 @@ a{
         width: 400px;
         h2{
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-top: 10%;
         }
         .skill_img{
@@ -721,14 +721,14 @@ a{
             background-color: white;
             h2{
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 margin-top: 5%;
             }
             .img-box{
                 float: left;
                 position: relative;
                 width: 80%;
-                height: 350px;
+                height: 250px;
                 margin: 5% 5% 0 10%;
                 background-attachment: scroll;
                 background-size: cover;
@@ -741,8 +741,8 @@ a{
             .project-ment{
                 float: right;
                 width: 80%;
-                height: 350px;
-                margin: 2% 10% 2% 5%;
+                height: 100%;
+                margin: 2% 10% 5% 5%;
                 background-color: #d1d8e0;
                 .project-ment-box{
                     width: 90%;
@@ -750,7 +750,7 @@ a{
                     margin: 5% auto;
                     li{
                         margin: 0 0 5% 2%;
-                        font-size : 1rem;
+                        font-size : 0.8rem;
                     }
                 }
             }
@@ -771,13 +771,13 @@ a{
     }
     
     .swiper-button-next{
-        margin-right: 50px;
+        margin-right: 5%;
     }
     .swiper-button-prev{
-        margin-left: 50px;
+        margin-left: 5%;
     }
     .swiper-pagination{
-        margin-bottom: 40px;
+        margin-bottom: 5%;
         span{
             width: 20%;
             border-radius: 0%;
@@ -793,25 +793,25 @@ a{
     .footer_wrap{
         position: relative;
         width: 100%;
-        height: 900px;
+        height: 100%;
         .title3{
             @include title;
             color: white;
         }
         .address{
             width: 100%;
-            margin-top: 100px;
             text-align: center;
+            margin: 10% 0 10% 0;
             li{
                 margin-top: 3%;
                 img{
-                    width: 70px;
+                    width: 10%;
                     vertical-align: middle;
                     margin-right: 2%;
                     filter: brightness(0) invert(1);            
                 }
                 span{
-                    font-size: 2rem;
+                    font-size: 1rem;
                     font-family: 'Nunito', sans-serif;
                     color: white;
                 }
@@ -836,23 +836,23 @@ a{
         }
         .last_ment{
             display: block;
-            font-size: 4rem;
-            margin-top: 200px;
+            font-size: 3rem;
+            padding: 5% 0 25% 0;
             font-family: 'Nunito', sans-serif;
             color: white;
             text-align: center;
         }
         .top_button{
             position: absolute;
-            font-size: 2rem;
+            font-size: 1.2rem;
             border-radius: 100%;
             border: none;
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             background-color: rgb(255, 255, 255);
             font-family: 'Nunito', sans-serif; 
-            bottom: 1.5em;
-            left: 1.5em;
+            bottom: 5%;
+            left: 5%;
         }
         .top_button:hover{
             cursor: pointer;

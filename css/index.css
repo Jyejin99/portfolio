@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -531,19 +532,18 @@ a {
   .top_wrap {
     position: relative;
     width: 100%;
-    height: 900px;
-    margin: 0 auto;
+    height: 100%;
   }
   .top_wrap .menu_list {
-    height: 130px;
+    height: 30%;
     width: 100%;
     text-align: center;
     background-color: #4b6584;
   }
   .top_wrap .menu_list li {
     display: inline-block;
-    margin: 5% 4% 0 4%;
-    font-size: 2rem;
+    margin: 5%;
+    font-size: 1.5rem;
   }
   .top_wrap .menu_list a {
     color: white;
@@ -567,8 +567,8 @@ a {
     display: none;
   }
   .top_wrap .top_ment_wrap .top_ment {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     margin: 30% auto;
   }
   .top_wrap .top_ment_wrap .top_ment p {
@@ -576,19 +576,19 @@ a {
     margin-bottom: 2%;
   }
   .top_wrap .top_ment_wrap .top_ment .ment:nth-child(1) {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     color: #36485e;
   }
   .top_wrap .top_ment_wrap .top_ment .ment:nth-child(2) {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Nunito', sans-serif;
     color: #36485e;
   }
   .top_wrap .top_ment_wrap .top_ment .ment:nth-child(3) {
     margin-top: 10%;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Nunito', sans-serif;
     color: #4b6584;
   }
@@ -649,14 +649,14 @@ a {
     background-color: white;
   }
   .introduction_1 .introduction_contents1 .education .education_contents ul {
-    margin: 2% 0 0 10%;
+    margin: 2% 0 0 5%;
   }
   .introduction_1 .introduction_contents1 .education .education_contents ul li {
     width: 90%;
     height: 10%;
-    padding: 35px 0 0 0;
+    padding-top: 10%;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .introduction_1 .introduction_contents1 .hobby {
     width: 45%;
@@ -676,14 +676,14 @@ a {
     background-color: white;
   }
   .introduction_1 .introduction_contents1 .hobby .hobby_contents ul {
-    margin: 2% 0 0 35%;
+    margin: 2% 0 0 5%;
   }
   .introduction_1 .introduction_contents1 .hobby .hobby_contents ul li {
     width: 90%;
     height: 10%;
-    padding: 50px 0 0 0;
+    padding-top: 10%;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .introduction_1 .introduction_contents2 {
     width: 100%;
@@ -711,14 +711,14 @@ a {
     background-color: white;
   }
   .introduction_1 .introduction_contents2 .activity .activity_contents ul {
-    margin: 1% 0 0 10%;
+    margin: 2% 0 5% 5%;
   }
   .introduction_1 .introduction_contents2 .activity .activity_contents ul li {
     width: 90%;
     height: 10%;
-    padding: 45px 0 0 0;
+    padding-top: 10%;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .introduction_1 .introduction_contents2 .activity .activity_contents ul li span {
     margin-right: 5%;
@@ -742,7 +742,7 @@ a {
   }
   .introduction_2 .introduction_list_1 .skill_1 h2 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10%;
   }
   .introduction_2 .introduction_list_1 .skill_1 .skill_img {
@@ -760,7 +760,7 @@ a {
   }
   .introduction_2 .introduction_list_1 .skill_2 h2 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10%;
   }
   .introduction_2 .introduction_list_1 .skill_2 .skill_img {
@@ -778,7 +778,7 @@ a {
   }
   .introduction_2 .introduction_list_1 .skill_3 h2 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10%;
   }
   .introduction_2 .introduction_list_1 .skill_3 .skill_img {
@@ -828,14 +828,14 @@ a {
   }
   .swiper-slide .project_1 h2, .swiper-slide .project_2 h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 5%;
   }
   .swiper-slide .project_1 .img-box, .swiper-slide .project_2 .img-box {
     float: left;
     position: relative;
     width: 80%;
-    height: 350px;
+    height: 250px;
     margin: 5% 5% 0 10%;
     background-attachment: scroll;
     background-size: cover;
@@ -848,8 +848,8 @@ a {
   .swiper-slide .project_1 .project-ment, .swiper-slide .project_2 .project-ment {
     float: right;
     width: 80%;
-    height: 350px;
-    margin: 2% 10% 2% 5%;
+    height: 100%;
+    margin: 2% 10% 5% 5%;
     background-color: #d1d8e0;
   }
   .swiper-slide .project_1 .project-ment .project-ment-box, .swiper-slide .project_2 .project-ment .project-ment-box {
@@ -859,7 +859,7 @@ a {
   }
   .swiper-slide .project_1 .project-ment .project-ment-box li, .swiper-slide .project_2 .project-ment .project-ment-box li {
     margin: 0 0 5% 2%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .swiper-slide .project_1 button, .swiper-slide .project_2 button {
     display: block;
@@ -875,13 +875,13 @@ a {
     cursor: pointer;
   }
   .swiper-button-next {
-    margin-right: 50px;
+    margin-right: 5%;
   }
   .swiper-button-prev {
-    margin-left: 50px;
+    margin-left: 5%;
   }
   .swiper-pagination {
-    margin-bottom: 40px;
+    margin-bottom: 5%;
   }
   .swiper-pagination span {
     width: 20%;
@@ -895,7 +895,7 @@ a {
   .footer_wrap {
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 100%;
   }
   .footer_wrap .title3 {
     width: 100%;
@@ -911,21 +911,21 @@ a {
   }
   .footer_wrap .address {
     width: 100%;
-    margin-top: 100px;
     text-align: center;
+    margin: 10% 0 10% 0;
   }
   .footer_wrap .address li {
     margin-top: 3%;
   }
   .footer_wrap .address li img {
-    width: 70px;
+    width: 10%;
     vertical-align: middle;
     margin-right: 2%;
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
   }
   .footer_wrap .address li span {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Nunito', sans-serif;
     color: white;
   }
@@ -949,23 +949,23 @@ a {
   }
   .footer_wrap .last_ment {
     display: block;
-    font-size: 4rem;
-    margin-top: 200px;
+    font-size: 3rem;
+    padding: 5% 0 25% 0;
     font-family: 'Nunito', sans-serif;
     color: white;
     text-align: center;
   }
   .footer_wrap .top_button {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.2rem;
     border-radius: 100%;
     border: none;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     font-family: 'Nunito', sans-serif;
-    bottom: 1.5em;
-    left: 1.5em;
+    bottom: 5%;
+    left: 5%;
   }
   .footer_wrap .top_button:hover {
     cursor: pointer;
