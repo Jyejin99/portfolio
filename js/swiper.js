@@ -21,6 +21,6 @@ document.getElementById("copybtn").onclick = () => {
   // textarea의 내용을 복사한다.
   window.navigator.clipboard.writeText(myTextarea.textContent).then(() => {
     // 복사가 완료되면 호출된다.
-    alert("복사완료");
+    alert("Copy complete");
   });
 }
