@@ -76,8 +76,7 @@ a{
             }
             a{
                 color: white;
-                font-family: 'Nunito', sans-serif;
-            }
+                font-family: 'Noto Sans JP', sans-serif;            }
             a:hover{
                 color: rgb(115, 180, 255);
             }
@@ -106,19 +105,18 @@ a{
                 }
                 .ment:nth-child(1){
                     font-size: 2rem;
-                    font-family: 'Noto Sans KR', sans-serif;
-                    font-weight: 500;
+                    line-height: 50px;
+                    font-family: 'Noto Sans JP', sans-serif;                    font-weight: 500;
                     color: #36485e;
                 }
                 .ment:nth-child(2){
                     font-size: 5rem;
-                    font-family: 'Nunito', sans-serif;
-                    color: #36485e;
+                    font-family: 'Noto Sans JP', sans-serif;                    color: #36485e;
                 }
                 .ment:nth-child(3){
                     margin-top: 10%;
                     font-size: 3rem;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: 'Noto Sans JP', sans-serif;
                     color: #4b6584;
                 }
             }
@@ -133,7 +131,7 @@ a{
             text-align: center;
             padding-top: 40px;
             font-size: 2.5rem;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
         }
     }
     
@@ -143,11 +141,11 @@ a{
         min-width: 1200px;
     }
     ul li, p, span, button{
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
     }
     h2{
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 500;
     }
     .introduction_1{
@@ -159,7 +157,7 @@ a{
             @include title;
         }
         .introduction_contents1{
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -416,7 +414,7 @@ a{
                 }
                 span{
                     font-size: 2rem;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: 'Noto Sans JP', sans-serif;
                     color: white;
                 }
                 button{
@@ -442,7 +440,7 @@ a{
             display: block;
             font-size: 4rem;
             margin-top: 200px;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             color: white;
             text-align: center;
         }
@@ -454,7 +452,7 @@ a{
             width: 70px;
             height: 70px;
             background-color: rgb(255, 255, 255);
-            font-family: 'Nunito', sans-serif; 
+            font-family: 'Noto Sans JP', sans-serif;
             bottom: 1.5em;
             left: 1.5em;
         }
@@ -487,7 +485,7 @@ a{
             }
             a{
                 color: white;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Noto Sans JP', sans-serif;
             }
             a:hover{
                 color: rgb(115, 180, 255);
@@ -512,19 +510,19 @@ a{
                 }
                 .ment:nth-child(1){
                     font-size: 1rem;
-                    font-family: 'Noto Sans KR', sans-serif;
+                    font-family: 'Noto Sans JP', sans-serif;
                     font-weight: 500;
                     color: #36485e;
                 }
                 .ment:nth-child(2){
                     font-size: 3rem;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: 'Noto Sans JP', sans-serif;
                     color: #36485e;
                 }
                 .ment:nth-child(3){
                     margin-top: 10%;
                     font-size: 2rem;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: 'Noto Sans JP', sans-serif;
                     color: #4b6584;
                 }
             }
@@ -539,7 +537,7 @@ a{
             text-align: center;
             padding-top: 40px;
             font-size: 2.5rem;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
         }
     }
     
@@ -548,7 +546,7 @@ a{
         height: 100%;
     }
     ul li, p, span, button{
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
     }
     h2{
@@ -564,7 +562,7 @@ a{
             @include title;
         }
         .introduction_contents1{
-            font-family: 'Nanum Gothic', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -812,7 +810,7 @@ a{
                 }
                 span{
                     font-size: 1rem;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: 'Noto Sans JP', sans-serif;
                     color: white;
                 }
                 button{
@@ -838,7 +836,7 @@ a{
             display: block;
             font-size: 3rem;
             padding: 5% 0 25% 0;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             color: white;
             text-align: center;
         }
@@ -850,7 +848,7 @@ a{
             width: 50px;
             height: 50px;
             background-color: rgb(255, 255, 255);
-            font-family: 'Nunito', sans-serif; 
+            font-family: 'Noto Sans JP', sans-serif;
             bottom: 5%;
             left: 5%;
         }
